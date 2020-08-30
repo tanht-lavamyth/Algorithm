@@ -1,3 +1,10 @@
+/*
+* @Author: tanht
+* @Date:   2020-08-26 13:02:27
+* @Last Modified by:   tanht
+* @Last Modified time: 2020-08-30 19:14:43
+* @Email: tanht.lavamyth@gmail.com
+*/
 #include <iostream>
 
 using namespace std;
@@ -11,7 +18,8 @@ int main () {
 	int sLength = (int)s.size();
 
 	for (int i = 0; i < sLength; ++i) {
-		distinctChars[s[i] - 'A'] = true;
+		int decimalNumOfChar = int(s[i] - 'A');
+		distinctChars[decimalNumOfChar] = true;	// range 'A' = 65 to 'z' = 122 in decimal (ascii table)
 	}
 
 	int countDistinctChars = 0;
