@@ -1,0 +1,6 @@
+1. Starting Index of all solutions is 1
+
+2. Names:
+	[Problem name]_Nat: Natural way
+	[Problem name]_Hash: Using hash
+	[Problem name]_Sliding window: Using similar approach to a sliding window (Apply only non-negtative integers
