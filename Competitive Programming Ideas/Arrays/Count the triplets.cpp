@@ -2,7 +2,7 @@
 * @Author: tanht
 * @Date:   2020-08-29 21:14:24
 * @Last Modified by:   tanht
-* @Last Modified time: 2020-08-30 12:30:57
+* @Last Modified time: 2020-08-30 15:51:38
 * @Email: tanht.lavamyth@gmail.com
 */
 
@@ -43,7 +43,7 @@ int countTriplets(int a[], int N) {
 		return count;
 	}
 	return -1;
-	
+
 	// Be right when input are distinct integers
 }
 
@@ -66,7 +66,7 @@ int main () {
 	}
 }
 
-// Input: 
+// Input:
 // 3
 // 4
 // 1 5 3 2
@@ -79,5 +79,3 @@ int main () {
 // 2
 // -1
 // 4
-
-
