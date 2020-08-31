@@ -1,0 +1,11 @@
+1. In-place sorting algorithm: uses constant extra space for producing the output, such as Intertion Sort and Selection Sort. 
+
+2. External sorting: all data that needs to be sorted cannot be placed in-memory at a time. Merge Sort and its variations are typically used for external sorting. Some external storage like hard-disk, CD, etc is used external sorting.
+
+Internal sorting: When all data is placed in-memory, then sorting is called 
+
+3. Stable sorting: A sorting algorithm is said to be stable if two objects with equal keys appear in the same order in sorted output, such as indexes as they appear in the input array to be sorted.
+
+References: 
+1. https://www.geeksforgeeks.org/sorting-terminology/
+2. https://www.geeksforgeeks.org/stability-in-sorting-algorithms/

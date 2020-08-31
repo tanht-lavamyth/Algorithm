@@ -2,7 +2,7 @@
 * @Author: tanht
 * @Date:   2020-08-30 22:54:20
 * @Last Modified by:   tanht
-* @Last Modified time: 2020-08-30 23:11:14
+* @Last Modified time: 2020-08-31 13:34:00
 * @Email: tanht.lavamyth@gmail.com
 */
 
@@ -36,3 +36,5 @@ int main () {
 		cout << "CHAT WITH HER!";
 	}
 }
+
+// Read more bits: https://www.geeksforgeeks.org/check-whether-k-th-bit-set-not/
