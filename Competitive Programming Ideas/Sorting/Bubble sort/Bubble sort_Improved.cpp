@@ -1,13 +1,12 @@
 /*
 * @Author: tanht
-* @Date:   2020-09-02 21:02:25
+* @Date:   2020-09-02 22:54:45
 * @Last Modified by:   tanht
-* @Last Modified time: 2020-09-02 22:58:06
+* @Last Modified time: 2020-09-02 22:57:51
 * @Email: tanht.lavamyth@gmail.com
 */
 
 // Source: https://www.geeksforgeeks.org/bubble-sort/
-
 #include <iostream>
 
 using namespace std;
@@ -16,12 +15,17 @@ const int AMAX = 1007;
 
 int a[AMAX];
 
-void BubbleSort(int a[], int n) {
-	for (int i = 0; i < n - 1; ++i) {
-		for (int j = 0; j < (n - 1) - i; ++j) {
-			if (a[j] > a[j + 1]) {
-				swap (a[j], a[j + 1]);
+void ImprovedBubleSort(int a[], int n) {
+	for (int i = 0; i < n-1; ++i) {
+		bool isAnySwap = false;
+		for (int j = 0; j < (n-1) - i; ++j) {
+			if (a[j] > a[j+1]) {
+				isAnySwap = true;
+				swap (a[j], a[j+1]);
 			}
+		}
+		if (!isAnySwap) {
+			break;
 		}
 	}
 }
@@ -32,9 +36,9 @@ int main() {
 		cin >> a[i];
 	}
 
-	BubbleSort(a, n);
+	ImprovedBubleSort(a, n);
 
-	for (int i = 0 ; i < n; ++i) {
+	for (int i = 0; i < n; ++i) {
 		cout << a[i] << " ";
 	}
 }
