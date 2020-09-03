@@ -2,11 +2,13 @@
 * @Author: tanht
 * @Date:   2020-09-02 21:02:25
 * @Last Modified by:   tanht
-* @Last Modified time: 2020-09-02 22:58:06
+* @Last Modified time: 2020-09-03 04:43:06
 * @Email: tanht.lavamyth@gmail.com
 */
 
-// Source: https://www.geeksforgeeks.org/bubble-sort/
+// Source: 
+// https://www.geeksforgeeks.org/bubble-sort/
+// https://www.hackerearth.com/practice/algorithms/sorting/bubble-sort/tutorial/
 
 #include <iostream>
 
@@ -17,7 +19,7 @@ const int AMAX = 1007;
 int a[AMAX];
 
 void BubbleSort(int a[], int n) {
-	for (int i = 0; i < n - 1; ++i) {
+	for (int i = 0; i < n - 1; ++i) {	//   // (n-k-1) is for ignoring comparisons of elements which have already been compared in earlier iterations
 		for (int j = 0; j < (n - 1) - i; ++j) {
 			if (a[j] > a[j + 1]) {
 				swap (a[j], a[j + 1]);
