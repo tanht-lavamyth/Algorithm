@@ -2,7 +2,7 @@
 * @Author: tanht
 * @Date:   2020-09-02 19:57:15
 * @Last Modified by:   tanht
-* @Last Modified time: 2020-09-02 20:56:12
+* @Last Modified time: 2020-09-02 20:58:20
 * @Email: tanht.lavamyth@gmail.com
 */
 // Source: https://www.hackerearth.com/practice/algorithms/sorting/insertion-sort/practice-problems/algorithm/the-rise-of-the-weird-things-1/
@@ -10,7 +10,6 @@
 #include <iostream>
 
 using namespace std;
-
 
 const int AMAX = 1007;
 
