@@ -2,7 +2,7 @@
 * @Author: tanht
 * @Date:   2020-09-06 18:54:19
 * @Last Modified by:   tanht
-* @Last Modified time: 2020-09-09 19:48:21
+* @Last Modified time: 2020-09-10 07:02:55
 * @Email: tanht.lavamyth@gmail.com
 */
 
@@ -40,6 +40,8 @@ void HeapBasedArray(size_t size) {
 	while (p < numbers + size) {
 		cout << *p++ << " ";
 	}
+
+	delete[] numbers;
 }
 
 void SlackBasedArray (size_t size) {
