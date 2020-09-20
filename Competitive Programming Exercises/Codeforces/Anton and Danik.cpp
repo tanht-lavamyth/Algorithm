@@ -2,7 +2,7 @@
 * @Author: tanht
 * @Date:   2020-09-19 17:53:00
 * @Last Modified by:   tanht
-* @Last Modified time: 2020-09-19 17:55:06
+* @Last Modified time: 2020-09-20 10:46:18
 * @Email: tanht.lavamyth@gmail.com
 */
 
@@ -14,17 +14,17 @@ int main() {
 	int n; cin >> n;
 	string s; cin >> s;
 
-	int antonWinCounts = 0;
+	int antonWinnumberCountss = 0;
 	for (int i = 0; i < (int)s.size(); ++i) {
 		if (s[i] == 'A') {
-			++antonWinCounts;
+			++antonWinnumberCountss;
 		}
 	}
 
-	if (2 * antonWinCounts > n ) {
+	if (2 * antonWinnumberCountss > n ) {
 		cout << "Anton";
 	} else {
-		if (2 * antonWinCounts < n ) {
+		if (2 * antonWinnumberCountss < n ) {
 			cout << "Danik";
 		} else {
 			cout << "Friendship";
