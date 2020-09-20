@@ -2,7 +2,7 @@
 * @Author: tanht
 * @Date:   2020-09-20 11:06:19
 * @Last Modified by:   tanht
-* @Last Modified time: 2020-09-20 11:17:33
+* @Last Modified time: 2020-09-21 06:07:57
 * @Email: tanht.lavamyth@gmail.com
 */
 
@@ -51,7 +51,7 @@ string transform(const string s) {
 	return copyS;
 }
 
-int main() {
+int main() {	
 	string s; cin >> s;
 
 	if (isSatisfiedRules(s)) {
