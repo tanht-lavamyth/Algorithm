@@ -2,17 +2,21 @@
 * @Author: tanht
 * @Date:   2020-09-06 18:54:19
 * @Last Modified by:   tanht
-* @Last Modified time: 2020-09-06 20:41:40
+* @Last Modified time: 2020-09-08 19:03:08
 * @Email: tanht.lavamyth@gmail.com
 */
 
 // References: 
-// http://www.cplusplus.com/doc/tutorial/arrays/
-// https://www.geeksforgeeks.org/arrays-in-c-cpp/
-// https://www.tutorialspoint.com/cplusplus/cpp_arrays.htm
+// http://www.cplusplus.com/doc/tutorial/arrays/ (DONE)
+// https://www.geeksforgeeks.org/arrays-in-c-cpp/ (DONE)
+// https://www.tutorialspoint.com/cplusplus/cpp_arrays.htm (DONE)
+// Return array from functions
+
 // https://www.programiz.com/cpp-programming/arrays
+// https://www.programiz.com/cpp-programming/ranged-for-loop (range for loop)
 // https://www.programiz.com/c-programming/c-multi-dimensional-arrays
 // https://www.cpp.edu/~elab/ECE114/Array.html
+
 // https://en.cppreference.com/w/cpp/container/array
 // https://docs.microsoft.com/en-us/cpp/cpp/arrays-cpp?view=vs-2019
 
@@ -38,9 +42,15 @@ int main() {
 	for (int i = 0; i < 10; ++i) {
 		foo[i] += 1; // access the values and increase by 1
 	}
-	for (int i = 0; i < 10; ++i) {
-		cout << foo[i] << " ";
-	} 
+	// PRINTING
+	// for (int i = 0; i < 10; ++i) {
+	// 	cout << foo[i] << " ";
+	// } 
+	// cout << '\n';
+	// BUT WE NEED USE 'RANGED FOR LOOP'
+	for (const int &item : foo) {	// &n, uses the memory address of the array elements to access their data
+		cout << item << " ";
+	}
 	cout << '\n';
 
 	int jimmy [3][5]; // is equivalent to int jimmy [15] (3 * 5 = 15) in a two-dimensional table
