@@ -1,0 +1,26 @@
+FOR INCREASING ORDER, THE STARTING INDEX IS 0
+Complexity: O (n^2)
+1. Selection sort: loop from i = 0 to n - 1. At every index i, finding the minimum value such that the index j (the index of min value and index j is greater than i) and swap value at index i and j.
+SUMMARIZE: AT INDEX i, FIND THE INDEX OF A MINIMUM VALUE AND SWAP IT WITH i.
+
+2. Bubble sort: swap adjacent elements if they are in wrong position. At every index i, the array with range from n-1-i to n-1 has already sorted (always put i + 1 last elements to the right order).
+SUMMARIZE: AT INDEX i, PUT n - 1 - i TO THE RIGHT ORDER BY SWAPPING ADJACENT ELEMENTS.
+
+3. Inertion sort: At every index i, INSERT VALUE I TO THE CORRECT ORDER.
+
+Complexity: O(nlog(n)
+4. Quicksort: Apply divide and conquer strategy. At each partition (the conquer step), we choose the pivot and place it into the right position, then place all smaller elements to the left of the pivot and greater elements to the right of the pivot, then divide into 2 parts (the part of all left elements and the part of all right elements) and apply the conquer step.
+SUMMARIZE: 
+	CONQUER: CHOOSE THE PIVOT AND PUT IT THE RIGHT POSITION WITH THE CONDITION: ALL SMALLER ELEMENTS TO THE LEFT OF THE PIVOT, ALL GREATER ELEMENTS TO THE RIGHT.
+	DIVIDE: 2 PART (SMALLER ELEMENTS AND GREATER ELEMENTS)
+
+SUMMARIZE THE IDEA OF CONQUER STRATEGY in https://www.geeksforgeeks.org/quick-sort/ 
+conquerStrategy(a, lowId, highId)
+	Choose the pivot is the value of highId index.
+	Call i is the index such that all elements to index(i - 1) are smaller than the pivot and elements from index(i) are greater than the pivot. The initial value of i is left  - 1. 
+	Loop j from lowId to highId - 1
+		If a[j] < pivot
+			We realize that Index at j is in wrong position (when compared with index i - j > i but a[j] < pivot, it does not follow the rule: elements from index(i) are greater than the pivo )
+			increase i (the first greater element > pivot)
+			swap(a[i], a[j])
+	Finally, put pivot to the right position by swapping a[highId] and a[i + 1]
