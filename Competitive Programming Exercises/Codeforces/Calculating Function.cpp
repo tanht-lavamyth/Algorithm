@@ -2,7 +2,7 @@
 * @Author: tanht
 * @Date:   2020-09-21 05:52:59
 * @Last Modified by:   tanht
-* @Last Modified time: 2020-09-21 05:54:30
+* @Last Modified time: 2020-09-22 06:52:05
 * @Email: tanht.lavamyth@gmail.com
 */
 
@@ -10,15 +10,20 @@
 
 using namespace std;
 
+typedef long long LL;
+
 int main() {
-	int n; cin >> n;
+	LL n; cin >> n;
 	
-	long long s = 0, sign = -1;
-	for (int i = 1; i <= n; ++i) {
-		s += sign * i;
-		sign *= -1;
-	}
+	// LL evenLastNumPos = n / 2;
+	// //LL sumEVenNums = (2 + 2*evenLastNumPos)*evenLastNumPos / 2;
+	// LL sumEVenNums = (1 + evenLastNumPos)*evenLastNumPos;
 
+	// LL oldLastNumPos = n / 2 + n % 2;
+	// // LL sumOldNums = (1 + 2 *oldLastNumPos - 1)*oldLastNumPos / 2;
+	// LL sumOldNums = oldLastNumPos*oldLastNumPos;
 
-	cout << s;
+	// cout<< sumEVenNums - sumOldNums;
+
+	cout << n / 2 - (n % 2 + 2*(n/2*(n%2)));
 }
